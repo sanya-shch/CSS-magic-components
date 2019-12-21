@@ -1,0 +1,36 @@
+body {
+    padding: 150px;
+    font-size: 60%;
+}
+
+div,
+div::before,
+div::after {
+    width: 10em;
+    height: .5em;
+    background-color: red;
+    border-radius: 10em;
+    box-shadow: 0 0 0 3em red;
+}
+
+div {
+    position: relative;
+    font-size: 1em;
+}
+
+div::before,
+div::after {
+    content: '';
+    position: absolute;
+    top: -4.2em;
+}
+
+div::before {
+    left: -2.4em;
+    transform: rotate(-60deg);
+}
+
+div::after {
+    right: -2.4em;
+    transform: rotate(60deg);
+}
