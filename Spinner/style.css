@@ -1,0 +1,167 @@
+/*scss*/
+
+/*body {*/
+/*    padding: 200px;*/
+/*}*/
+
+/*$size: 80px;*/
+/*$distance: 100px;*/
+/*$speed: 4s;*/
+/*$animation: linear;*/
+/*$delay: 0s;*/
+/*$iterationCount: infinite;*/
+
+/*.wrapper,*/
+/*.ball {*/
+/*    width: $size;*/
+/*    height: $size;*/
+/*}*/
+
+/*.wrapper {*/
+/*    position: relative;*/
+/*}*/
+
+/*.ball {*/
+/*    position: absolute;*/
+/*    border-radius: $size;*/
+
+/*&-1 {*/
+/*    background-color: red;*/
+/*    animation: $speed $animation $delay $iterationCount ball-1;*/
+/*}*/
+/*&-2 {*/
+/*    background-color: green;*/
+/*    animation: $speed $animation $delay $iterationCount ball-2;*/
+/*}*/
+/*&-3 {*/
+/*    background-color: blue;*/
+/*    animation: $speed $animation $delay $iterationCount ball-3;*/
+/*}*/
+/*&-4 {*/
+/*    background-color: yellow;*/
+/*    animation: $speed $animation $delay $iterationCount ball-4;*/
+/*}*/
+/*}*/
+
+/*@keyframes ball-1 {*/
+/*    0%,*/
+/*    100% { transform: translate(0, 0); }*/
+/*    25% { transform: translate(0, -$distance); }*/
+/*    50% { transform: translate($distance, 0); }*/
+/*    75% { transform: translate(-$distance, 0); }*/
+/*}*/
+
+/*@keyframes ball-2 {*/
+/*    0%,*/
+/*    100% { transform: translate(0, 0); }*/
+/*    25% { transform: translate($distance, 0); }*/
+/*    50% { transform: translate(0, $distance); }*/
+/*    75% { transform: translate(0, -$distance); }*/
+/*}*/
+
+/*@keyframes ball-3 {*/
+/*    0%,*/
+/*    100% { transform: translate(0, 0); }*/
+/*    25% { transform: translate(0, $distance); }*/
+/*    50% { transform: translate(-$distance, 0); }*/
+/*    75% { transform: translate($distance, 0); }*/
+/*}*/
+
+/*@keyframes ball-4 {*/
+/*    0%,*/
+/*    100% { transform: translate(0, 0); }*/
+/*    25% { transform: translate(-$distance, 0); }*/
+/*    50% { transform: translate(0, -$distance); }*/
+/*    75% { transform: translate(0, $distance); }*/
+/*}*/
+
+
+/*------------------------------------------------------------------------------*/
+/*css*/
+
+body {
+    padding: 200px;
+}
+.wrapper, .ball {
+    width: 80px;
+    height: 80px;
+}
+.wrapper {
+    position: relative;
+}
+.ball {
+    position: absolute;
+    border-radius: 80px;
+}
+.ball-1 {
+    background-color: red;
+    animation: 4s linear 0s infinite ball-1;
+}
+.ball-2 {
+    background-color: green;
+    animation: 4s linear 0s infinite ball-2;
+}
+.ball-3 {
+    background-color: blue;
+    animation: 4s linear 0s infinite ball-3;
+}
+.ball-4 {
+    background-color: yellow;
+    animation: 4s linear 0s infinite ball-4;
+}
+@keyframes ball-1 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(0, -100px);
+    }
+    50% {
+        transform: translate(100px, 0);
+    }
+    75% {
+        transform: translate(-100px, 0);
+    }
+}
+@keyframes ball-2 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(100px, 0);
+    }
+    50% {
+        transform: translate(0, 100px);
+    }
+    75% {
+        transform: translate(0, -100px);
+    }
+}
+@keyframes ball-3 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(0, 100px);
+    }
+    50% {
+        transform: translate(-100px, 0);
+    }
+    75% {
+        transform: translate(100px, 0);
+    }
+}
+@keyframes ball-4 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-100px, 0);
+    }
+    50% {
+        transform: translate(0, -100px);
+    }
+    75% {
+        transform: translate(0, 100px);
+    }
+}
