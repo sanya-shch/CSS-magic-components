@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #333, #4c4c4c);
+}
+
+h1 {
+    position: relative;
+    color: #212121;
+    font-size: 25vh;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-bottom: 18px solid #212121;
+}
+h1:before {
+    content: 'Loading...';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #0ff;
+    border-bottom: 18px solid #0ff;
+    overflow: hidden;
+    animation: loading 8s infinite linear;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
