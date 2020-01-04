@@ -1,0 +1,51 @@
+body {
+    height:100vh;
+    margin:0;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    background-color:#f4f4f4;
+}
+svg {
+    margin: auto;
+    width:50%;
+    max-width:100%;
+}
+svg circle {
+    fill: #9599ff;
+}
+.shape {
+    height:100%;
+    width:50px;
+    shape-margin:3px;
+}
+.shape-left {
+    float:left;
+    shape-outside: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/circle-left.svg);
+}
+.shape-right {
+    float:right;
+    shape-outside: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/circle-right.svg);
+}
+.text {
+    color:#fff;
+    font-size:4px;
+    width:100px;
+    height:100%;
+    text-align:center;
+    line-height:1.6;
+    -webkit-hyphens:auto;
+    -ms-hyphens:auto;
+    hyphens:auto;
+}
+h1 {
+    font-size: 7px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    text-align:center;
+}
+p {
+    margin: 0;
+    text-align: justify;
+    text-align-last: center;
+}
