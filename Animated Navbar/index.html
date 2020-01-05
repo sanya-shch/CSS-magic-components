@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <title>Animated Navbar</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Animated Navbar</h1>
+            <ul>
+                <li><a data-page="home" href="#">Home</a></li>
+                <li><a data-page="details" href="#">Details</a></li>
+                <li><a data-page="contacts" href="#">Contacts</a></li>
+                <div class="bubble"></div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section data-index="0" class="home">
+            <h2>Home</h2>
+        </section>
+        <section data-index="1" class="details">
+            <h2>Details</h2>
+        </section>
+        <section data-index="2" class="contacts">
+            <h2>Contacts</h2>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
