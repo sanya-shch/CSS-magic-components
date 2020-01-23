@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #212121;
+}
+
+h2 {
+    position: relative;
+    font-size: 4em;
+    color: #444;
+    width: 80%;
+}
+
+h2 span {
+    color: #00ffff;
+    display: none;
+}
