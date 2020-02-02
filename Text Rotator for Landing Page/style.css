@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("alina-grubnyak-OzIk9PW0g50-unsplash.jpg");
+    background-size: cover;
+    position: relative;
+    text-align: left;
+    font-size: 35px;
+    color: #fff;
+}
+
+.container {
+    margin-top: -180px;
+}
+
+h1 {
+    width: 599px;
+    height: 155px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+h1 span {
+    display: block;
+    background: yellow;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
