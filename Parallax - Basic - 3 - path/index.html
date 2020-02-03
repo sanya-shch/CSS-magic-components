@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <title>Basic Parallax</title>
+</head>
+<body>
+    <header>
+        <img id="cloud1" class="layer cloud small" data-offset="0.7" src="images/cloud.svg"/>
+        <img id="cloud2" class="layer cloud" data-offset="0.3" src="images/cloud.svg"/>
+        <img id="cloud3" class="layer cloud small" data-offset="0.4" src="images/cloud.svg"/>
+
+        <img id="layer4" class="layer" data-offset="1" src="images/layer-4.svg"/>
+        <img id="layer3" class="layer" data-offset="0.7" src="images/layer-3.svg"/>
+        <img id="layer2" class="layer" data-offset="0.5" src="images/layer-2.svg"/>
+        <img id="logo" class="layer" data-offset="-2" width="200" src="images/logo.svg"/>
+        <img id="fg" src="images/layer-1.svg"/>
+    </header>
+
+    <section>
+    </section>
+
+    <section id="section3">
+        <img class="layer layer2" src="images/3-bg.svg" alt="">
+        <img id="light" class="abs" src="images/2-light.png" alt="">
+        <img class="layer layer2" src="images/3-mask.svg" alt="">
+        <svg class="layer layer2" version="1.1" id="scrollPath" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 1280 1435" style="enable-background:new 0 0 1280 1435;" xml:space="preserve" preserveAspectRatio="xMidYMid meet"
+        >
+            <rect id="scrollBg" x="0" y="0" width="1280" height="1435" fill="rgba(0, 0, 0, 0.5)"/>
+            <polyline id="scrollLine" points="864.8,113.9 660.8,450 459.8,402 345,652 693,908 999,1096 " fill="none" stroke="#5e0000" stroke-miterlimit="10" stroke-width="10"/>
+        </svg>
+    </section>
+
+    <section>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
