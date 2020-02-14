@@ -1,0 +1,49 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sofa {
+    width: 1000px;
+    height: 600px;
+    background: url("sofa.jpg") no-repeat;
+    background-size: 100% auto;
+    margin:20px;
+}
+.sofa svg {
+    mix-blend-mode: multiply;
+}
+label {
+    display: inline-block;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+label.red {
+    background:#ea7070;
+}
+label.green {
+    background:#8ac6d1;
+}
+label.blue {
+    background:#6b778d;
+}
+.cls-1 {
+    fill:#ea7070;
+}
+#red-radio:checked ~ .sofa .cls-1 {
+    fill:#ea7070;
+}
+#green-radio:checked ~ .sofa .cls-1 {
+    fill:#8ac6d1;
+}
+#blue-radio:checked ~ .sofa .cls-1 {
+    fill:#6b778d;
+}
+input[type="radio"] {
+    visibility: hidden;
+}
