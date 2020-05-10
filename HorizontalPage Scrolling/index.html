@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <title>HorizontalPage Scrolling</title>
+</head>
+<body>
+    <div class="container" data-0="transform:translateX(0%);" data-1000="transform:translateX(-300%);">
+        <section>
+            <div class="content">
+                <h2>Section 1</h2>
+            </div>
+        </section>
+        <section>
+            <div class="content">
+                <h2>Section 2</h2>
+            </div>
+        </section>
+        <section>
+            <div class="content">
+                <h2>Section 3</h2>
+            </div>
+        </section>
+        <section>
+            <div class="content">
+                <h2>Section 4</h2>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="skrollr.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
+</body>
+</html>
